@@ -17,437 +17,7 @@
     <title>Document</title>
   </head>
   <style>
-    body {
-      background: white;
-    }
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    #img {
-      background-image: url("./images/donation0.jpg");
-
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 1300px;
-    }
-    #img {
-      height: 100vh;
-    }
-    .title {
-      color: whitesmoke;
-      position: absolute;
-      top: 140px;
-      font-size: 60px;
-      font-weight: 700;
-      left: 416px;
-    }
-    .title-area {
-      position: relative;
-      top: 265px;
-      left: 512px;
-      color: #ff5959;
-      font-weight: 700;
-      font-size: 60px;
-    }
-
-    #top-para {
-      position: relative;
-      left: 357px;
-      color: grey;
-      top: 300px;
-      font-size: 20px;
-    }
-    .btn {
-      position: relative;
-      top: 355px;
-      left: 636px;
-    }
-    .btn-main {
-      background: #ff5959;
-      width: 163px;
-      height: 56px;
-      outline: none;
-      border-radius: 8px;
-      border: none;
-      color: white;
-      font-weight: 800;
-      font-size: 18px;
-    }
-
-    #div-1 {
-      color: whitesmoke;
-      font-size: 24px;
-    }
-    #div-1 {
-      color: whitesmoke;
-      font-size: 24px;
-    }
-    #div-2 {
-      color: whitesmoke;
-      font-size: 32px;
-      border: 2px solid #ff5959 !important;
-      background: #ffeeee !important;
-    }
-    #div-3 {
-      color: whitesmoke;
-      font-size: 24px;
-    }
-    #div-4 {
-      color: whitesmoke;
-      font-size: 24px;
-    }
-    #div-5 {
-      color: whitesmoke;
-      font-size: 24px;
-      background: red;
-      padding: center;
-      text-align: center;
-    }
-    #div-5 > div {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .width {
-      width: 132px;
-      height: 120px;
-      background: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .donate-title-format {
-      position: relative;
-      top: 98px;
-      left: 577px;
-      font-size: 38px;
-    }
-    .donate-para-part {
-      position: relative;
-      top: 260px;
-      left: 577px;
-      font-size: 23px;
-    }
-
-    #donate-para {
-      position: relative;
-      left: 320px;
-      font-size: 20px;
-      justify-content: center;
-      top: 90px;
-      color: #bbbbbb;
-      font-weight: bolder;
-      margin-top: 5px;
-      margin-bottom: 5px;
-    }
-    #donate-para-space {
-      position: relative;
-
-      left: 211px;
-    }
-
-    #donate-calculation > div {
-      display: inline-block;
-      background: whitesmoke;
-      color: grey;
-      font-weight: 800;
-    }
-    #donate-calculation {
-      width: 50%;
-      margin: 0 auto;
-      position: relative;
-      top: 100px;
-    }
-
-    .parent {
-      position: relative;
-    }
-    .child {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
-    /* input field styling */
-    .input-area {
-      position: relative;
-      top: 178px;
-      left: 300px;
-    }
-    input[type="text"] {
-      background: whitesmoke;
-      width: 681px;
-      height: 60px;
-      border: none;
-      border-bottom: 1px solid grey;
-      outline: none;
-    }
-    /* input placeholder styling */
-    ::-webkit-input-placeholder {
-      /* Edge */
-      color: grey;
-      text-align: center;
-      font-size: 16px;
-    }
-
-    :-ms-input-placeholder {
-      /* Internet Explorer */
-      color: grey;
-      text-align: center;
-      font-size: 16px;
-    }
-
-    ::placeholder {
-      color: grey;
-      text-align: center;
-      font-size: 16px;
-    }
-    /* styling donate-button  */
-    #donanate-button-area {
-      position: relative;
-      top: 238px;
-      left: 120px;
-    }
-    #donate-button {
-      width: 160px;
-      height: 64px;
-      border-radius: 8px;
-      background: #ff5959;
-      color: whitesmoke;
-      font-size: 18px;
-      font-weight: 800;
-    }
-    /* stylying donate plan section */
-    #donate-container > div {
-      display: inline-block;
-    }
-    #first,
-    #second,
-    #third {
-      color: green;
-      width: 25%;
-      margin-right: 10px;
-      height: 345px;
-    }
-    #first {
-      background: #ffeeee;
-    }
-    #second {
-      background: #edf5f6;
-    }
-    #third {
-      background: #fff4d6;
-    }
-    /* styling donate plan section */
-
-    #donate-plan {
-      position: relative;
-      top: -35px;
-      left: 476px;
-      font-size: 25px;
-    }
-    #donate-plan h2{
-      color:#121212;
-    }
-    #donate-plan-para {
-      position: relative;
-      left: -140px;
-      top: 27px;
-      font-size: 20px;
-    }
-    donate-plan-para p{
-
-     font-size: 10px;
-     Font-family:Poppins;
-     font-weight: 100;
-     line-height: 28px;
-     text-align: center;
-     color:#707070;
-
-    }
-    #donate-plan-para-space {
-      position: relative;
-      margin-left: 45px;
-      margin-bottom: 52px;
-    }
-    #donate-plan-section {
-      position: relative;
-      top: 345px;
-      left: 162px;
-    }
-    .first-img,
-    .second-img,
-    .third-img {
-      margin-top: 15px;
-    }
-    /* start styling donate plan column section */
-    #donate-plan
-    /* styling donate-plan-para section */
-
-    /* making 3 colimns */
-    /* #donate-top{              positioning 3columns vertically */
-    #donate-top {
-      margin-top: 10px;
-      height: 357px;
-      width: 95%;
-      position: absolute;
-    }
-    #donate-top > div {
-      display: inline-block;
-    }
-    #div-1-donate,
-    #div-2-donate,
-    #div-3-donate {
-      width: 31%;
-      margin-right: 1.2%;
-      padding: 10px;
-      position: relative;
-      top: 340px;
-    }
-
-    #div-1-donate {
-    
-      font-size: 16px;
-      color: grey;
-      line-height: 1.3;
-      background:rgba(79, 157, 166, 0.1);
-      height: 352px;
-    }
-    #div-2-donate {
-      position: relative;
-      top: 310px;
-      font-size: 16px;
-      color: grey;
-      line-height: 1.3;
-      background:rgba(255, 89, 89, 0.1);
-      height:352px;
-    }
-    #div-3-donate {
-      position: relative;
-      top: 342px;
-      color: grey;
-      font-size: 16px;
-      line-height: 1.3;
-      background:#FFF4D6;
-      height: 352px;
-    }
-    .padding {
-      padding: 8px;
-    }
-    /* update section area styling */
-
-    .updates {
-      height: 515px;
-      width: 1414px;
-      background: #fff;
-      margin-top: 352px;
-      position: absolute;
-    }
-    #box {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 700px;
-      background: #fff;
-      height: 515px;
-    }
-    #box h3 {
-      font-size: 45px;
-      font-weight: 700;
-      line-height: 54px;
-      text-align: center;
-      margin-top: 38px;
-    }
-    #box p {
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 22px;
-      text-align: center;
-    }
-    input {
-      position: relative;
-      display: inline-block;
-      box-sizing: border-box;
-
-      outline: none;
-      font-size: 20px;
-      transition: 0.5s;
-    }
-    input[type="text"] {
-      position: absolute;
-      background: #fff;
-      width: 360px;
-      border: none;
-      height: 50px;
-      font-size: 20px;
-      padding: 0 25px;
-    }
-    input[type="submit"] {
-      position: relative;
-      background: #fff;
-      top: 0;
-      right: -283px;
-      font-size: 20px;
-      width: 50px;
-      width: 200px;
-      outline: none;
-      border: none;
-      height: 50px;
-      background: #ff5959;
-      color: white;
-    }
-  
-    .input-area-update {
-      background: #fff4d6;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      height: 200px;
-
-      transform: translate(-50%, -50%);
-      width: 830px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .input-move{
-      margin-right: 203px;
-    }
-    #footer {
-      margin-top: 358px;
-      position: relative;
-      top: 511px;
-      width: 1440px;
-      margin-left: 37px;
-    }
-    #footer-inside {
-      width: 100%;
-      margin: 0 auto;
-      height: 177px;
-      background: #000;
-    }
-    #footer-inside #bottom-text {
-      text-align: center;
-      color: white;
-      margin-top: 8px;
-    }
-    .footer-top-text {
-      font-family: "Oleo Script Swash Caps", cursive;
-      font-style: italic;
-    }
-    #footer-text-point {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    #footer-text-point p {
-      text-align: center;
-    }
+   
   </style>
   <body>
     <main>
@@ -469,6 +39,8 @@
           <button class="btn-main">Donate Now</button>
         </div>
       </section>
+      <!-- start donate part section -->
+
       <section id="donate-part">
         <div id="donate-title">
           <h1 class="donate-title-format">Donate Today</h1>
@@ -476,10 +48,8 @@
         <div id="donate-para-part">
           <p id="donate-para">
             Charity can make you feel better and more fulfilled. Research has
-            identified a link between making a donation <br /><span
-              id="donate-para-space"
-              >to charity and increased activity in the area of the brain.</span
-            >
+            identified a link<br> <span>to charity and increased activity in the area of the brain.
+            </span> 
           </p>
         </div>
         <div id="donate-calculation">
@@ -502,13 +72,15 @@
         <div id="input-area">
           <input type="text" class="input" placeholder="other amount (taka)" />
         </div>
-        <div
-          id="donate-button-area"
-          style="position: relative; top: 236px; left: 689px"
-        >
+       
           <button id="donate-button">Donate Now</button>
-        </div>
+       
       </section>
+      <!-- end of donate part section -->
+
+      <!-- start donate plan section -->
+
+
       <section id="donate-plan-section">
         <div id="donate-plan">
           <h2>Our Donate Plan</h2>
@@ -523,65 +95,64 @@
           </div>
         </div>
       </section>
+<!-- end of donate plan section -->
+
+
       <!-- start donate plan column section -->
 
       <section id="donate-plan-column-section">
         <div id="donate-top">
-          <div id="div-1-donate" class="position">
+          <div id="div-1-donate" >
             <div id="div-1-donate-img">
-              <img src="./images/1.png" alt="" width="13%" />
+              <img src="./images/1.png" alt=""  class="div-1-donate-img"/>
             </div>
-            <div id="div-1-title" class="padding">
+            <div id="div-1-title" style="padding:15px">
               <h3>Food for family</h3>
-            </div>
-            <div id="div-1-para">
+           
+            
               <p class="text-style">
-                we have the knowledge and tools to support families who are
-                struggling now. This is not the time to lose hope in the fight
-                against hunger - despite the immense challenges that humanity
-                faces there are solutions to help communities adapt and build
-                resiliency to extreme weather patterns and disasters, while
-                finding sustainable sources of healthy food.
+                we have the knowledge and tools to support families who are struggling now. This is not the time to lose hope in the fight against hunger - despite the immense challenges that humanity faces there are solutions to help communities adapt and build resiliency .
+
+
               </p>
             </div>
           </div>
-          <div id="div-2-donate" class="padding">
+          <div id="div-2-donate" class="padding" >
             <div id="div-2-img">
-              <img src="./images/2.png" alt="" width="13%" />
+              <img src="./images/2.png" alt="" class="div-2-donate-img"/>
             </div>
-            <div id="div-2-title">
+            <div id="div-2-title" style="padding:15px">
               <h3>Shelter for a family</h3>
-            </div>
-            <div id="div-2-para">
+           
+            
               <p class="text-style">
-                Most homeless shelters or service organization will welcome your
-                on-hand assistance, and in many cases they have staff members
-                who cultivate volunteer relationships. Be honest about what
-                you're capable of, whether it's one event or ......
+                Most homeless shelters or service organization will welcome your on-hand assistance, and in many cases they have staff members who cultivate volunteer relationships. Be honest about what you're capable of, whether it's one event or
+
               </p>
             </div>
           </div>
-          <div id="div-3-donate" class="padding">
+          <div id="div-3-donate" class="padding" style="margin-bottom:0px" >
             <div id="div-3-img">
-              <img src="./images/3.png" alt="" width="12%" />
+              <img src="./images/3.png" alt="" class="div-3-img" />
             </div>
-            <div id="div-3-title">
+            <div id="div-3-title" style="padding:15px">
               <h3>Education for a child</h3>
-            </div>
-            <div id="div-3-para">
+           
+            
               <p class="text-style">
-                Save the Children is working to ensure that every child receives
-                a good quality education, and learns the skills they will need
-                to thrive in the 21st century. We are breaking down the barriers
-                to education by helping marginalised and vulnerable children –
-                including those who are living in conflict and disaster zones -
-                access early childhood and primary school services.
+                Save the Children is working to ensure that every child receives a good quality education, and learns the skills they will need to thrive in the 21st century. We are breaking down the barriers to education by helping marginalised and vulnerable children.
+
               </p>
             </div>
           </div>
+         
         </div>
+        
       </section>
       <!-- end of donate plan column section -->
+
+      <!-- start updates section -->
+
       <section class="updates">
         <div id="box">
           <h3>Get My Updates</h3>
@@ -594,13 +165,20 @@
           <form action="#" id="form">
             <div id="input-main-update">
             <div class="input-area-update">
-              <input type="text" name="email" placeholder="Email"  class="input-move"/>
+              <div class="input-area-uddate-position">
+              <input type="text" name="email" placeholder="Email"  class="input-move input-move-1"/>
               <input type="submit" value="Subscribe" class="input-move"/>
             </div>
+          </div>
           </div>
           </form>
         </div>
       </section>
+
+      <!-- end of update section -->
+
+      <!-- start footer section -->
+
       <section id="footer">
         <div id="footer-inside">
           <div id="footer-text-point">
@@ -615,6 +193,8 @@
           <p id="bottom-text">I'm gonna do it</p>
         </div>
       </section>
+      <!-- end of footer section -->
+
     </main>
   </body>
 </html>
