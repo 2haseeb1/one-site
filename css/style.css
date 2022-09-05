@@ -458,6 +458,7 @@ color: #707070;
     height: 50px;
     background: #ff5959;
     color: white;
+    border:none;
   }
 
   .input-area-update {
